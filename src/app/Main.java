@@ -27,16 +27,18 @@ public class Main {
                 CURRENCY, amountOfSales, CURRENCY, avgCost);
 
         day = 7;
-        cost = 10486.85;
+        pcs = 85;
+        cost = 123.374706;
         NUMBER_ORDER++;
         productName = "laptop";
-        avgCost = cost / day;
+        amountOfSales = pcs * cost;
+        avgCost = amountOfSales / day;
 
-        System.out.printf("%s No %s: %s, %n" +
-                        "total sales for %s days is %s %s,%n" +
-                        "sales by day is %s %.2f.",
+        System.out.printf("%s No %s: %s,%n" +
+                        "total sales for %s days is %s %.2f,%n" +
+                        "sales by day is %s %.2f.%n",
                 PRODUCT, NUMBER_ORDER, productName, day,
-                CURRENCY, cost, CURRENCY, avgCost);
+                CURRENCY, amountOfSales, CURRENCY, avgCost);
 
     }
 }
